@@ -14,7 +14,7 @@
 .sidebar {
 	width: 270px;
 }
-.radios-wrap .item-radio {
+.radios-wrap .item-radio { 
 	margin-right: 15px;
 }
 .range-chart__item {
@@ -23,7 +23,7 @@
 .user {
     padding: 0 13px;
     padding-right: 7px;
-    }
+    } 
     .links-header li {
     margin-right: 50px;
 }
@@ -35,6 +35,17 @@ bottom: 50px;
 }
 .subscribers-unit {
     padding: 11px 13px;
+    }
+    .leaderboad {
+        padding: 23px;
+        padding-bottom: 0;
+    }
+    .leaderboad__chart {
+        margin: 0 -23px;
+        margin-top: auto;
+    }
+    .leaderboad-content {
+        padding: 23px;
     }
 }
 @media only screen and (max-width : 1470px) {
