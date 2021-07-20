@@ -13,9 +13,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="shortcut icon" href="favicon.png" />
 	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.css" />
+	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
-	<link rel="stylesheet" href="css/main.css?ver=1.5" />
-	<link rel="stylesheet" href="css/media.css?ver=1.5" />
+	<link rel="stylesheet" href="css/main.css?ver=1.8" />
+	<link rel="stylesheet" href="css/media.css?ver=1.8" />
 </head>
 <body>
 
@@ -153,8 +154,8 @@
 					</div>
 				</div>
 				<div class="buttons-full">
-					<a href="#" class="btn-main">Add a portfolio</a>
-					<a href="#" class="btn-main btn-main_page">Edit your Profile</a>
+					<a href="#add-portfolio" class="btn-main fancybox">Add a portfolio</a>
+					<a href="#edit-portfolio" class="btn-main btn-main_page fancybox">Edit your Profile</a>
 				</div>
 			</div>
 			<div class="content">
@@ -292,6 +293,116 @@
 		
 	</div>
 
+	<div id="add-portfolio" class="modal-block">
+		<div class="modal-wrap">
+			<div class="title-modal">Create public portfolio page</div>
+			<form>
+				<div class="item-form">
+					<input type="text">
+					<div class="item-form__descr">Name page</div>
+				</div>
+				<div class="row row_main">
+					<div class="col-6">
+						<div class="item-form">
+							<input type="text">
+							<div class="item-form__descr">API key</div>
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="item-form">
+							<input type="text">
+							<div class="item-form__descr">Secret key</div>
+						</div>
+					</div>
+				</div>
+				<div class="title-form">Choose an exchanger</div>
+				<div class="wrap-exchangers">
+					<div class="item-exchanger">
+						<div class="item-exchanger__icon">
+							<img src="img/ic_exchanger.svg" alt="alt">
+						</div>
+						<div class="item-exchanger__text">Binance</div>
+					</div>
+					<div class="item-exchanger active">
+						<div class="item-exchanger__icon">
+							<img src="img/ic_exchanger.svg" alt="alt">
+						</div>
+						<div class="item-exchanger__text">Binance Futures </div>
+					</div>
+					<div class="item-exchanger">
+						<div class="item-exchanger__icon">
+							<img src="img/ic_exchanger.svg" alt="alt">
+						</div>
+						<div class="item-exchanger__text">Binance Margin</div>
+					</div>
+					<div class="item-exchanger">
+						<div class="item-exchanger__icon">
+							<img src="img/ic_exchanger.svg" alt="alt">
+						</div>
+						<div class="item-exchanger__text">Binance Margin</div>
+					</div>
+				</div>
+				<button class="btn-main">Create</button>
+				<div class="descr-form">We care about your security. Please verify that the API key is Read-Only, without trade and withdrawal rights. How to do: <a href="#">Bitmex</a>, <a href="#">Binance Futures</a>, <a href="#">Bybit</a></div>
+			</form>
+		</div>
+	</div>
+
+	<div id="edit-portfolio" class="modal-block">
+		<div class="modal-wrap">
+			<div class="title-modal">Edit portfolio page</div>
+			<form>
+				<div class="item-form">
+					<input type="text" class="input-valid" value="1m$ without Moonbot (name portfolio)">
+					<div class="item-form__descr">Name</div>
+				</div>
+				<div class="row row_main">
+					<div class="col-6">
+						<div class="item-form">
+							<input type="text" class="input-valid" value="this API-key is for my-robot">
+							<div class="item-form__descr">API key</div>
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="item-form">
+							<input type="text">
+							<div class="item-form__descr">Secret key</div>
+						</div>
+					</div>
+				</div>
+				<div class="title-form">Choose an exchanger</div>
+				<div class="wrap-exchangers">
+					<div class="item-exchanger">
+						<div class="item-exchanger__icon">
+							<img src="img/ic_exchanger.svg" alt="alt">
+						</div>
+						<div class="item-exchanger__text">Binance</div>
+					</div>
+					<div class="item-exchanger active">
+						<div class="item-exchanger__icon">
+							<img src="img/ic_exchanger.svg" alt="alt">
+						</div>
+						<div class="item-exchanger__text">Binance Futures </div>
+					</div>
+					<div class="item-exchanger">
+						<div class="item-exchanger__icon">
+							<img src="img/ic_exchanger.svg" alt="alt">
+						</div>
+						<div class="item-exchanger__text">Binance Margin</div>
+					</div>
+					<div class="item-exchanger">
+						<div class="item-exchanger__icon">
+							<img src="img/ic_exchanger.svg" alt="alt">
+						</div>
+						<div class="item-exchanger__text">Binance Margin</div>
+					</div>
+				</div>
+				<button class="btn-main">edit</button>
+				<div class="descr-form">We care about your security. Please verify that the API key is Read-Only, without trade and withdrawal rights. How to do: <a href="#">Bitmex</a>, <a href="#">Binance Futures</a>, <a href="#">Bybit</a></div>
+			</form>
+		</div>
+	</div>
+
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
 	<script src="libs/html5shiv/html5shiv.min.js"></script>
@@ -299,8 +410,9 @@
 	<script src="libs/respond/respond.min.js"></script>
 <![endif]-->
 <script src="libs/jquery/jquery-1.11.1.min.js"></script>
+<script src="libs/fancybox/jquery.fancybox.pack.js"></script>
 <script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
-<script src="js/common.js?ver=1.5"></script>
+<script src="js/common.js?ver=1.8"></script>
 <!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 <!-- Google Analytics counter --><!-- /Google Analytics counter -->
 </body>
