@@ -1,4 +1,22 @@
 /*==========  Desktop First Method  ==========*/
+@media only screen and (max-height : 900px) {
+    .page-login {
+        padding-top: 60px;
+        padding-bottom: 100px;
+    }
+    .page-login__logo {
+        margin-bottom: 40px;
+    }
+    }
+    @media only screen and (max-height : 820px) {
+ .page-login {
+        padding-top: 30px;
+        padding-bottom: 70px;
+    }
+    .page-login__logo {
+        margin-bottom: 30px;
+    }
+    }
 @media only screen and (max-width : 1700px) {
     .feature-chart {
        padding-left: 10px;
@@ -17,7 +35,7 @@
 .sidebar::before {
     width: 270px;
 }
-.radios-wrap .item-radio { 
+.radios-wrap .item-radio {  
 	margin-right: 15px;
 }
 .range-chart__item {
