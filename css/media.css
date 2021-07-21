@@ -23,7 +23,7 @@
        padding-right: 10px;
        margin-right: 8px;
    }
-   .content {
+   .content-page {
        padding-left: 20px;
    }
    .item-select_prof .jq-selectbox__select-text {
@@ -62,14 +62,21 @@
     padding-bottom: 0;
 }
 .leaderboad__chart {
-    margin: 0 -23px;
+    margin: 0 -23px; 
     margin-top: auto;
 }
 .leaderboad-content {
     padding: 23px;
 }
-.links-header {
+.links-header { 
     padding-left: 0;
+}
+.logo-wrap {
+    width: 297px;
+}
+.footer {
+    padding-left: 30px;
+    padding-right: 30px;
 }
 }
 @media only screen and (max-width : 1580px) {
@@ -79,6 +86,13 @@
     .title-big {
         font-size: 72px;
         line-height: 91px;
+    }
+    .months-wrap {
+        margin: 0 -5px;
+    }
+    .item-month {
+        margin: 0 5px;
+        margin-top: 25px;
     }
 }
 @media only screen and (max-width : 1470px) {
