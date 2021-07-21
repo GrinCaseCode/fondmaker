@@ -15,19 +15,19 @@
 	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.css" />
 	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
-	<link rel="stylesheet" href="css/main.css?ver=1.8" />
-	<link rel="stylesheet" href="css/media.css?ver=1.8" />
+	<link rel="stylesheet" href="css/main.css?ver=1.11" /> 
+	<link rel="stylesheet" href="css/media.css?ver=1.11" />
 </head>
 <body>
 
 	<div class="wrapper">
- 
+		
 		<div class="header">
 			<div class="logo-wrap">
 				<a href="#" class="logo">
 					<img src="img/logo.svg" alt="alt">
 				</a>
-			</div> 
+			</div>  
 			<ul class="links-header"> 
 				<li class="active">
 					<a href="#">
@@ -156,96 +156,122 @@
 			</div>
 			<div class="content">
 				<div class="content-owerflow">
-					<ul class="tabs-list tabs-list_settings">
-						<li><a href="#">My pages</a></li>
-						<li><a href="#">Tournaments</a></li>
-						<li><a href="#">Wallet</a></li>
-						<li class="active"><a href="#">Settings</a></li>
-					</ul>
-					<div class="wrap-settings">
-						<div class="wrap-settings__left">
-							<div class="image-change">
-								<input id="image" type="file" name="image" onchange="document.getElementById('blah').src = window.URL.createObjectURL(this.files[0])" required="required">
-								<img id="blah"  width="89" height="89" />
-								<div class="image-change__content"><img src="img/ic_photo.svg" alt="alt">edit photo</div>
+					<div class="content-page">
+						<ul class="tabs-list tabs-list_settings">
+							<li><a href="#">My pages</a></li>
+							<li><a href="#">Tournaments</a></li>
+							<li><a href="#">Wallet</a></li>
+							<li class="active"><a href="#">Settings</a></li>
+						</ul>
+						<div class="wrap-settings">
+							<div class="wrap-settings__left">
+								<div class="image-change">
+									<input id="image" type="file" name="image" onchange="document.getElementById('blah').src = window.URL.createObjectURL(this.files[0])" required="required">
+									<img id="blah"  width="89" height="89" />
+									<div class="image-change__content"><img src="img/ic_photo.svg" alt="alt">edit photo</div>
+								</div>
+							</div>
+							<div class="wrap-settings__right">
+								<div class="title-setting">Personal Information</div>
+								<form>
+									<div class="item-form">
+										<input type="text" class="input-valid" value="@antonxaritonovf">
+										<div class="item-form__descr">Username</div>
+									</div>
+									<div class="item-form">
+										<input type="text" class="input-valid" value="haritonov04@yandex.ru">
+										<div class="item-form__descr">E-mail</div>
+									</div>
+									<div class="item-form">
+										<textarea class="input-valid">Hi. I use the Bitmex provider. &#13;&#10;Copy Bitmex - Coming soon. Like I said I'm an autistic person.</textarea>
+										<div class="item-form__descr">About</div>
+										<div class="descr-textarea">300 words</div>
+									</div>
+									<div class="item-form">
+										<input type="text" class="input-valid" value="https://mytrades.link/user/7fc236a6-2341-4cde-b549-795f66e87c3b">
+										<div class="item-form__descr">Your Personal Page View</div>
+									</div>
+									<div class="title-setting">Social media</div>
+									<div class="row row_main">
+										<div class="col-6">
+											<div class="item-form item-form_icon">
+												<input type="text" class="input-valid" value="@antonxaritonovf">
+												<div class="item-form__descr">Facebook</div>
+												<div class="item-form__icon">
+													<img src="img/input_fb.svg" alt="alt">
+												</div>
+											</div>
+										</div>
+										<div class="col-6">
+											<div class="item-form item-form_icon">
+												<input type="text" class="input-valid" value="@antonxaritonovf">
+												<div class="item-form__descr">Telegram</div>
+												<div class="item-form__icon">
+													<img src="img/input_tg.svg" alt="alt">
+												</div>
+											</div>
+										</div>
+										<div class="col-6">
+											<div class="item-form item-form_icon">
+												<input type="text">
+												<div class="item-form__descr">Youtube</div>
+												<div class="item-form__icon">
+													<img src="img/input_tg.svg" alt="alt">
+												</div>
+											</div>
+										</div>
+										<div class="col-6">
+											<div class="item-form item-form_icon">
+												<input type="text">
+												<div class="item-form__descr">Twitter</div>
+												<div class="item-form__icon">
+													<img src="img/input_tw.svg" alt="alt">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="title-setting">Password</div>
+									<div class="item-form">
+										<input type="password">
+										<div class="item-form__descr">Old password</div>
+									</div>
+									<div class="item-form">
+										<input type="password">
+										<div class="item-form__descr">New Password</div>
+									</div>
+									<div class="item-form">
+										<input type="password">
+										<div class="item-form__descr">Repeat a new password</div>
+									</div>
+									<button class="btn-main">Save</button>
+								</form>
 							</div>
 						</div>
-						<div class="wrap-settings__right">
-							<div class="title-setting">Personal Information</div>
-							<form>
-								<div class="item-form">
-									<input type="text" class="input-valid" value="@antonxaritonovf">
-									<div class="item-form__descr">Username</div>
-								</div>
-								<div class="item-form">
-									<input type="text" class="input-valid" value="haritonov04@yandex.ru">
-									<div class="item-form__descr">E-mail</div>
-								</div>
-								<div class="item-form">
-									<textarea class="input-valid">Hi. I use the Bitmex provider. &#13;&#10;Copy Bitmex - Coming soon. Like I said I'm an autistic person.</textarea>
-									<div class="item-form__descr">About</div>
-									<div class="descr-textarea">300 words</div>
-								</div>
-								<div class="item-form">
-									<input type="text" class="input-valid" value="https://mytrades.link/user/7fc236a6-2341-4cde-b549-795f66e87c3b">
-									<div class="item-form__descr">Your Personal Page View</div>
-								</div>
-								<div class="title-setting">Social media</div>
-								<div class="row row_main">
-									<div class="col-6">
-										<div class="item-form item-form_icon">
-											<input type="text" class="input-valid" value="@antonxaritonovf">
-											<div class="item-form__descr">Facebook</div>
-											<div class="item-form__icon">
-												<img src="img/input_fb.svg" alt="alt">
-											</div>
-										</div>
-									</div>
-									<div class="col-6">
-										<div class="item-form item-form_icon">
-											<input type="text" class="input-valid" value="@antonxaritonovf">
-											<div class="item-form__descr">Telegram</div>
-											<div class="item-form__icon">
-												<img src="img/input_tg.svg" alt="alt">
-											</div>
-										</div>
-									</div>
-									<div class="col-6">
-										<div class="item-form item-form_icon">
-											<input type="text">
-											<div class="item-form__descr">Youtube</div>
-											<div class="item-form__icon">
-												<img src="img/input_tg.svg" alt="alt">
-											</div>
-										</div>
-									</div>
-									<div class="col-6">
-										<div class="item-form item-form_icon">
-											<input type="text">
-											<div class="item-form__descr">Twitter</div>
-											<div class="item-form__icon">
-												<img src="img/input_tw.svg" alt="alt">
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="title-setting">Password</div>
-								<div class="item-form">
-									<input type="password">
-									<div class="item-form__descr">Old password</div>
-								</div>
-								<div class="item-form">
-									<input type="password">
-									<div class="item-form__descr">New Password</div>
-								</div>
-								<div class="item-form">
-									<input type="password">
-									<div class="item-form__descr">Repeat a new password</div>
-								</div>
-								<button class="btn-main">Save</button>
-							</form>
-						</div>
 					</div>
+					<footer class="footer">
+						<div class="footer__wrap">
+							<div class="footer__left">
+								<a href="#" class="footer__logo">
+									<img src="img/footer_logo.svg" alt="alt">
+								</a>
+								<div class="footer__copyright">Copyright © 2019-2021 <br>Fond-maker. Все права защищены</div>
+							</div>
+							<ul class="footer__menu">
+								<li><a href="#">Privacy Policy</a></li>
+								<li><a href="#">Support</a></li>
+								<li><a href="#">About us</a></li>
+								<li><a href="#">Contacts</a></li>
+							</ul>
+							<div class="footer__right">
+								<div class="social-title">follow us on social media</div>
+								<ul class="social-list">
+									<li><a href="#"><img src="img/soc1.svg" alt="alt"></a></li>
+									<li><a href="#"><img src="img/soc2.svg" alt="alt"></a></li>
+									<li><a href="#"><img src="img/soc3.svg" alt="alt"></a></li>
+								</ul>
+							</div>
+						</div>
+					</footer>
 				</div>
 			</div>
 		</div>
@@ -261,7 +287,7 @@
 <script src="libs/jquery/jquery-1.11.1.min.js"></script>
 <script src="libs/fancybox/jquery.fancybox.pack.js"></script>
 <script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
-<script src="js/common.js?ver=1.8"></script>
+<script src="js/common.js?ver=1.11"></script>
 <!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 <!-- Google Analytics counter --><!-- /Google Analytics counter -->
 </body>
